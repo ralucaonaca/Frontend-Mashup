@@ -1,0 +1,13 @@
+<div>
+    <a ui-sref="create-person">Add Person</a>
+    <div class="row text-center">
+        <div class="col-md-3">Person Name</div>
+        <div class="col-md-3">Delete</div>
+    </div>
+    <div class="row text-center"  ng-repeat="person in persons">
+        <div class="col-md-3"><a ui-sref="edit-person({ personId : '{{person.id}}'})">{{person.firstName}} {{person.lastName }}</a></div>
+        <div class="col-md-3"><a ui-sref="delete-person({ personId : '{{person.id}}'})">Delete</a></div>
+    </div>
+</div>
+
+

@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/dist/css/styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/angular.ui-router/0.2.15/angular-ui-router.min.js"></script>
+    <script src="/dist/js/scripts.js"></script>
+</head>
+<body ng-app="myApp">
+<div class="container">
+    <nav class="navbar navbar-inverse" role="navigation">
+        <ul class="nav navbar-nav">
+            <li><a ui-sref="person-list">Persons List</a></li>
+        </ul>
+    </nav>
+</div>
+<div ui-view class="container">
+
+</div>
+</body>
+</html>

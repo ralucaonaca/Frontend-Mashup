@@ -1,0 +1,85 @@
+// To remove active,hover effect comment this out
+@import "navbar_effect";
+
+.menu_wrapper {
+  background: $aud_darkblue;
+  height: 42px;
+  color: $aud_white;
+  box-shadow: 0px 6px 20px 0px rgba(0, 0, 0, 0.6);
+  border-bottom: 1px solid $aud_white;
+  a {
+    color: $aud_white;
+  }
+  .navbar {
+    width: 100%;
+    min-height: 0;
+    background-color: #0c2c53;
+    color: #fff;
+    z-index: 105;
+    margin-top: 0;
+    padding: 0;
+    &.down li {
+      display: inline-block !important;
+    }
+    li {
+      &:not(.navtoogle) {
+        display: none;
+      }
+      display: inline-block;
+      position: relative;
+      padding: 6px 7.5px;
+      width: 100%;
+      a {
+        display: inline-block;
+
+      }
+      &.active {
+        a {
+          font-weight: bold;
+        }
+      }
+    }
+    .admin-menu {
+      li,
+      a {
+        display: block;
+      }
+    }
+  }
+
+  .additional_navbar {
+    top: 4px;
+    position: absolute;
+    z-index: 1000;
+    right: 7px;
+    li {
+      display: inline-block;
+
+    }
+    > li {
+      &:last-child {
+        margin: 0 15px 0 25px;
+      }
+    }
+    .user-icon {
+      background: $aud_white;
+      border-radius: 15px;
+      border: 1px solid $aud_white;
+      overflow: hidden;
+    }
+    .bootstrap-select {
+      width: 80px !important;
+    }
+    .flagwrapper {
+      display: inline-block;
+      width: 34px;
+      height: 34px;
+      border-radius: 20px;
+      border: 1px solid #fff;
+      overflow: hidden;
+      float: left;
+      margin-right: 5px;
+    }
+  }
+}
+

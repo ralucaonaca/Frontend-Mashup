@@ -1,0 +1,27 @@
+<form>
+    <div class="">
+        <div class="row">
+            <div class="form-group">
+                <div class="col-xs-4" ng-show="{{newPerson}}">
+                    <label for="user_id">Person id:</label>
+                    <input type="text" class="form-control" id="user_id" ng-model="person.id"/>
+                </div>
+                <div class="col-xs-4">
+                    <label for="first_name">First Name</label>
+                    <input type="text" class="form-control" id="first_name" ng-model="person.firstName"/>
+                </div>
+                <div class="col-xs-4">
+                    <label for="last_name">Last Name</label>
+                    <input type="text" class="form-control" id="last_name" ng-model="person.lastName"/>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="row">
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary" ng-click="update(person)">Submit</button>
+            </div>
+        </div>
+    </div>
+</form>

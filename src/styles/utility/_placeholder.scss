@@ -1,0 +1,24 @@
+%aud-btn-orange {
+  background: $aud_orange;
+  background: linear-gradient(to bottom, $aud_orange 0, $aud_darkorange 100%);
+  border: 1px solid $aud_darkorange;
+  color: $aud_white;
+  @include btn-main;
+  &:hover {
+    background: linear-gradient(to bottom, $aud_darkorange 0, $aud_orange 100%);
+    color: $aud_white;
+  }
+}
+
+%aud-btn-white {
+  background: $aud_white;
+  border: 1px solid $aud_grey;
+  color: $aud_black;
+  @include btn-main;
+  &:hover {
+    color: $aud_grey;
+    border-color: $aud_grey;
+  }
+}
+
+

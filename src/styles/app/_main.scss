@@ -1,0 +1,154 @@
+
+h3 {
+  color: $text-color-main;
+}
+
+* {
+  margin: 0;
+}
+
+.error_wrapper {
+  color: $error_color;
+  font-weight: $error_font-weight;
+}
+
+input, button {
+  &:focus {
+    outline: 0;
+  }
+}
+
+ul {
+  list-style: none;
+  padding-left: 15px;
+}
+
+h1, h2, h3, h4, h5 {
+  padding: 10px 0 10px 10px;
+  font-weight: bold;
+  margin: 0;
+  font-size: 14px;
+}
+
+button[type="submit"], .aud-btn:not(.selectpicker) {
+  @extend %aud-btn-orange;
+}
+
+.aud-btn-cancel {
+  @extend %aud-btn-white;
+  cursor: default;
+  &:hover {
+    border-color: inherit;
+  }
+}
+
+label {
+  font-weight: bold;
+}
+
+input[type="text"], input[type="password"] {
+  border: 1px solid $aud_lightgrey;
+  border-radius: $aud-border-radius;
+  padding: 6px;
+  &:focus {
+    border: 1px solid $aud-blue;
+  }
+}
+
+.icon {
+  input[type="text"], input[type="password"] {
+    padding-left: 45px;
+    width: 100%;
+  }
+}
+
+button[type="submit"] {
+  width: 100px;
+}
+
+i {
+  &.arrow-right:after {
+    content: "\e257";
+    padding-right: 5px;
+    transform: rotate(180deg);
+  }
+  &.arrow-up:after {
+    content: "\e257";
+    padding-right: 5px;
+    transform: rotate(90deg);
+    top: 4px;
+  }
+  &.arrow-down:after {
+    content: "\e257";
+    padding-right: 5px;
+    transform: rotate(-90deg);
+  }
+  &.pencil:after {
+    content: "\270f";
+    top: 2px;
+  }
+  &.bell:after {
+    content: "\e123";
+    top: 2px;
+  }
+  &.double-arrow-right:after, &.double-arrow-right:before {
+    content: "\e257";
+    transform: rotate(180deg);
+    top: 2px;
+  }
+  &.double-arrow-right:after {
+    margin-left: -5px;
+  }
+  &.minus-sign {
+    transition: all .2s ease-in-out;
+    &:after {
+      content: "\e082";
+      margin-left: -5px;
+
+    }
+    &:hover {
+      transition: all .2s ease-in-out;
+      transform: rotate(90deg);
+      right: 10px !important;
+    }
+  }
+  &.plus-sign:after {
+    content: "\e081";
+    top: 2px;
+  }
+}
+
+.icon {
+  &:before, &:after {
+    font-family: 'Glyphicons Halflings';
+    display: inline-block;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    top: 0px;
+    position: relative;
+  }
+}
+
+.input_wrapper {
+  position: relative;
+
+  &.pass:before {
+    content: "\e033";
+  }
+  &.user:before {
+    content: "\e008";
+  }
+  &.search:before {
+    content: "\e003";
+  }
+
+  &:before {
+    color: #ccc;
+    position: absolute;
+    left: 10px;
+    z-index: 100;
+    font-size: 20px;
+    top: 7px;
+  }
+}

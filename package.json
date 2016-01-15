@@ -1,0 +1,39 @@
+{
+  "name": "project_frontent",
+  "description": "Learning how to automate the front",
+  "version": "0.0.1",
+  "author": {
+    "name": "project",
+    "email": "ralucaonaca@gmail.com"
+  },
+  "config": {
+    "hash_map": "./src/assets_map.json",
+    "src": "./src",
+    "dist": "./dist",
+    "web_dir": "./web",
+    "asset_path": "/assets",
+    "asset_url": "/assets"
+  },
+  "dependencies": {
+    "grunt": "~0.4.5",
+    "grunt-contrib-clean": "~0.6.0",
+    "grunt-contrib-compass": "~1.0",
+    "grunt-contrib-rename": "~0.0.*",
+    "grunt-contrib-uglify": "*",
+    "grunt-assets-hash": "~0.1.*",
+    "grunt-contrib-jshint": "~0.7.2",
+    "grunt-browser-sync": "~2.2.0",
+    "grunt-phantomcss": "~0.2.2",
+    "grunt-karma":"",
+    "karma": "",
+    "grunt-ng-annotate": ""
+  },
+  "devDependencies": {
+    "grunt-contrib-watch": "~0.6.*",
+    "grunt-contrib-imagemin": "~0.8.*",
+    "karma-chrome-launcher": "^0.2.0",
+    "karma-jasmine": "~0.1.5",
+    "karma-script-launcher": "~0.1.0",
+    "karma-firefox-launcher": "~0.1.3"
+  }
+}
